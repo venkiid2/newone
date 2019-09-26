@@ -1,0 +1,10 @@
+node('ubuntu')
+ {
+     stage('git'){
+         git ''
+     }
+stage('package')
+{
+    sh 'mvn package'
+}
+ }
